@@ -1,0 +1,49 @@
+#logo{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+#link{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#page{
+    background-color: lightgray;
+}
+
+#content{
+    background-color: white;
+}
+nav{
+    background-color: white;
+}
+.post{
+    margin-top: 20px;
+    border-bottom: solid 1px lightgray;
+}
+#primary{
+    background-color: white;
+}
+
+#pages{
+    display: inline;
+    float: left;
+}
+footer{
+    margin-top: 50px;
+    display: block;
+}
+th {
+    border-bottom:1px solid gray;
+    background:none repeat scroll 0 0 darkred;
+    padding:10px;
+    color: #FFFFFF;
+}
+tr:nth-child(even) {background: #FFFFFF}
+tr:nth-child(odd) {background: #BBBBBB}
+
+.entry-content{
+    border: 1px solid lightgray;
+    padding: 20px;
+}

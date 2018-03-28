@@ -1,0 +1,1 @@
+<%response.sendRedirect("blog?page=1"); %>

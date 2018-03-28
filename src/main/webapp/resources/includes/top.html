@@ -1,0 +1,33 @@
+<body>
+<div id="logo" class="col-md-offset-2">
+    <a href="https://www.perfectsensedigital.com/"><img src="${pageContext.request.contextPath}/resources/images/PS.png" width="150" height="80">
+    
+  </div>
+  <span>
+  <div id="link">
+  
+   <a href="https://www.engadget.com/2015/08/31/colombia-mass-surveillance/">Read here and post comments</a> 
+   </div>
+   
+   </span>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid col-md-offset-2">
+        <div class="navbar-header">
+            <%--<a class="navbar-brand" href="/">JavaBlog CMS</a>--%>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/blog_project/blog?page=1">Main page</a></li>
+            
+    
+            <c:choose>
+                <c:when test="${username == 'anonymousUser'}">
+                    <li><a href="/blog_project/login">Login</a></li>
+                </c:when>
+                <c:otherwise>
+                    <li><a href="/blog_project/admin">Admin menu</a></li>
+                    <li><a href="<c:url value="/j_spring_security_logout"/>">Logout</a></li>
+                </c:otherwise>
+            </c:choose>
+        </ul>
+    </div>
+</nav>
